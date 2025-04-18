@@ -1,0 +1,43 @@
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Button styles from Figma */
+.button-danger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    
+    background-color: #EC221F;
+    border: 1px solid #C00F0C;
+    border-radius: 8px;
+    
+    /* Text styles */
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1em;
+    color: #FEE9E7;
+    
+    /* Reset button styles */
+    cursor: pointer;
+    outline: none;
+}
+
+/* Hover effect */
+.button-danger:hover {
+    background-color: #D41E1B;
+}
+
+/* Active state */
+.button-danger:active {
+    background-color: #C00F0C;
+}
