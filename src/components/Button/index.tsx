@@ -14,9 +14,31 @@ export const Button = ({
   variant = 'danger',
   ...props
 }: ButtonProps) => {
-  const baseStyles = 'flex items-center justify-center gap-2 px-3 py-3 rounded-lg font-normal text-base font-inter';
+  // 基本スタイル
+  const baseStyles = [
+    'flex',
+    'items-center',
+    'justify-center',
+    'gap-2',
+    'px-3',
+    'py-3',
+    'rounded-lg',
+    'font-normal',
+    'text-base',
+    'font-inter',
+  ].join(' ');
+
+  // バリアント別のスタイル
   const variantStyles = {
-    danger: 'bg-[#EC221F] text-[#FEE9E7] border border-[#C00F0C] hover:bg-[#C00F0C]',
+    danger: [
+      'bg-danger-primary',
+      'text-danger-text',
+      'border',
+      'border-danger-hover',
+      'hover:bg-danger-hover',
+      'transition-colors',
+      'duration-200',
+    ].join(' '),
   };
 
   return (
