@@ -1,44 +1,41 @@
 # Figma MCP Sample
 
-このリポジトリは、Figma MCPのサンプルプロジェクトです。
+Next.jsを使用したFigmaプラグインのサンプルプロジェクトです。
 
-## 概要
+## 開発環境のセットアップ
 
-Figmaとの連携機能を実装したサンプルプロジェクトです。
-
-## 機能
-
-- Figmaデザインの取得
-- コンポーネントの自動生成
-- デザインの同期
-
-## セットアップ
-
-1. リポジトリのクローン
-```bash
-git clone https://github.com/nagisa-laughcraft/figma-mcp-sample.git
-cd figma-mcp-sample
-```
-
-2. 依存関係のインストール
 ```bash
 npm install
 ```
 
-3. 環境変数の設定
+## 開発サーバーの起動
+
 ```bash
-cp .env.example .env
-# .envファイルを編集して必要な環境変数を設定
+npm run dev
 ```
 
-## 使い方
+## テストの実行
 
-詳細な使用方法は随時更新予定です。
+```bash
+# ユニットテスト
+npm run test
 
-## ライセンス
+# E2Eテスト
+npm run test:e2e
+```
 
-MIT
+## 品質確認
 
-## コントリビューション
+```bash
+# 型チェック
+npm run typecheck
 
-PRやIssueは大歓迎です！
+# リンター
+npm run lint
+```
+
+## ビルド
+
+```bash
+npm run build
+```
