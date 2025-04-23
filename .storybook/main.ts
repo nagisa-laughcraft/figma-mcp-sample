@@ -16,6 +16,12 @@ const config: StorybookConfig = {
   },
   "staticDirs": [
     "../public"
-  ]
+  ],
+  "core": {
+    "builder": "@storybook/builder-webpack5"
+  },
+  "docs": {
+    "autodocs": true
+  }
 };
 export default config;

@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import { Button } from './Button';
+import { Button } from '.';
 
 describe('Button', () => {
   it('renders button with text', () => {
@@ -11,9 +11,10 @@ describe('Button', () => {
   it('applies danger variant styles', () => {
     render(<Button variant="danger">Danger Button</Button>);
     const button = screen.getByRole('button', { name: 'Danger Button' });
-    expect(button).toHaveClass('bg-[#EC221F]');
-    expect(button).toHaveClass('text-[#FEE9E7]');
-    expect(button).toHaveClass('border-[#C00F0C]');
+    expect(button).toHaveClass('bg-danger-primary');
+    expect(button).toHaveClass('text-danger-text');
+    expect(button).toHaveClass('border-danger-hover');
+    expect(button).toHaveClass('hover:bg-danger-hover');
   });
 
   it('merges custom className with default styles', () => {
