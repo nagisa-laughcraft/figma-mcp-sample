@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
-import { NewsletterForm } from './NewsletterForm';
+import { NewsletterForm } from '.';
 
 describe('NewsletterForm', () => {
   it('renders email input', () => {
