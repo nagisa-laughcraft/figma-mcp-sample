@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { NewsletterForm } from './NewsletterForm';
+import { NewsletterForm } from '.';
 
 const meta: Meta<typeof NewsletterForm> = {
   title: 'Components/NewsletterForm',

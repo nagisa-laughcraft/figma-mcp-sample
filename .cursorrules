@@ -1,5 +1,5 @@
 # GitHub操作に関するルール
-- GitHub関連の操作はすべてMCPクライアントを使用すること
+- GitHub関連の操作はMCPクライアントを使用すること
 - リポジトリ情報:
   - owner: nagisa-laughcraft
   - repository: figma-mcp-sample
@@ -12,7 +12,7 @@
     2. 作業ブランチの作成: `git checkout -b {prefix}/{branch-name}`
 - コミット手順:
   1. 変更内容の確認: `git status` で変更ファイルを確認
-  2. 変更のステージング: 
+  2. 変更のステージング:
     - 全ての変更を追加: `git add .`
     - 特定のファイルのみ: `git add {file-path}`
   3. コミットメッセージの作成:

@@ -5,7 +5,7 @@ test('ボタンの表示と基本的なスタイルのテスト', async ({ page 
   await page.goto('http://localhost:3000');
 
   // ボタンが表示されていることを確認
-  const button = page.getByRole('button', { name: 'Click me!' });
+  const button = page.getByRole('button', { name: 'Button' });
   await expect(button).toBeVisible();
 
   // ボタンのクラスを確認
